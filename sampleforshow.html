@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorite Animals</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <form>
+      <label for="name">What's your favorite type of animal?</label>
+      <input name="name" placeholder="Input answer"/>
+      <br/>
+      <br/>
+      <label for="reason">Why is it your favorite?</label>
+      <input name="reason" placeholder="Input reason"/>
+      <br/>
+      <br/>
+      <button id="submit-btn" type="submit">Submit</button>
+    </form>
+
+    <script type="text/javascript">
+      $('#submit-btn').on('click', function(e) {
+        e.preventDefault();
+        console.log('All animals are the best!!');
+      });
+    </script>
+  </body>
+</html>
